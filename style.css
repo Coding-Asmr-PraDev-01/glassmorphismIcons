@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root{
+    --white-bg-al-06: rgba(255, 255, 255, 0.6);
+    --white-bg-al-04: rgba(255, 255, 255, 0.4);
+    --dark-bg-al-05: rgba(0, 0, 0, 0.5);
+    --body-bg: #e4eaf1;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background: #e4eaf1;
+}
+
+.container .glassIcons {
+    display: flex;
+    gap: 8rem;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.container .glassIcons .iconBx {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  filter: drop-shadow(0 0 4rem var(--dark-bg-al-05));
+}
+
+.container .glassIcons .iconBx .icon {
+  font-size: 7rem;
+}
+
+p{
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.container .glassIcons .iconBx:nth-child(1):before {
+  content: "";
+  position: absolute;
+  top: 2.2rem;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: var(--white-bg-al-06);
+  border: 3px solid var(--white-bg-al-04);
+  backdrop-filter: blur(20px);
+  border-radius: 1rem;
+}
+
+.container .glassIcons .iconBx:nth-child(1) h1 {
+  background-image: radial-gradient(
+    circle farthest-corner at 7.2% 13.6%,
+    rgba(37, 249, 245, 1) 0%,
+    rgba(8, 70, 218, 1) 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .glassIcons .iconBx:nth-child(2) h1 {
+    background-image: linear-gradient( 109.6deg,  rgba(44,83,131,1) 18.9%, rgba(95,175,201,1) 91.1% );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .glassIcons .iconBx:nth-child(2):before {
+  content: "";
+  position: absolute;
+  top: 4.4rem;
+  left: -1rem;
+  width: 80px;
+  height: 40px;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  background: var(--white-bg-al-06);
+  border: 3px solid var(--white-bg-al-04);
+  backdrop-filter: blur(40px);
+}
+
+.container .glassIcons .iconBx:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 1.2rem;
+  left: 0.3rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--white-bg-al-06);
+  border: 3px solid var(--white-bg-al-04);
+  backdrop-filter: blur(40px);
+}
+
+.container .glassIcons .iconBx:nth-child(3) h1 {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-image: radial-gradient(
+    circle farthest-corner at 10.2% 55.8%,
+    rgba(252, 37, 103, 1) 0%,
+    rgba(250, 38, 151, 1) 46.2%,
+    rgba(186, 8, 181, 1) 90.1%
+  );
+}
+
+.container .glassIcons .iconBx:nth-child(3) div {
+  position: absolute;
+  top: 0.7rem;
+  left: -2.7rem;
+  width: 100px;
+  height: 70px;
+  border-radius: 0.3rem;
+  background: var(--white-bg-al-06);
+  border: 3px solid var(--white-bg-al-04);
+  backdrop-filter: blur(40px);
+  overflow: hidden;
+  border-radius: 1rem;
+
+}
+
+.container .glassIcons .iconBx:nth-child(3) div::before {
+    content: "";
+    position: absolute;
+    top: -4rem;
+    left: 0;
+    width: 107.5px;
+    height: 89.2px;
+    background: var(--white-bg-al-06);
+    transform: rotate(314deg);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.container .glassIcons .iconBx:nth-child(3) p{
+    margin-top: 2rem;
+    margin-left: -2rem;
+}
+
+
+.container .glassIcons .iconBx:nth-child(4) h1 {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,101,133,1) 0%, rgba(255,211,165,1) 90% );
+}
+
+.container .glassIcons .iconBx:nth-child(4) div{
+    position: absolute;
+    top: -1.8rem;
+    left: -3.4rem;
+    width: 100px;
+    height: 100px;
+    background: var(--white-bg-al-06);
+    border: 3px solid var(--white-bg-al-04);
+    backdrop-filter: blur(40px);
+    border-radius: 50%;
+}
+
+.container .glassIcons .iconBx:nth-child(4) div::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--white-bg-al-06);
+    border: 3px solid var(--white-bg-al-04);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(40px);
+}
+
+.container .glassIcons .iconBx:nth-child(4) div::after{
+    content: "";
+    position: absolute;
+    bottom: -0.8rem;
+    left: 1.4rem;
+    transform: rotate(45deg);
+    width: 50px;
+    height: 50px;
+    background: var(--white-bg-al-06);
+    z-index: -1;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .glassIcons .iconBx:nth-child(4) p{
+    margin-top: 2rem;
+    margin-left: -2rem;
+}
